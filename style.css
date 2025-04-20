@@ -27,7 +27,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #6366f1; /* azul violeta */
+  color: #6366f1;
 }
 
 header p {
@@ -50,6 +50,7 @@ section h2 {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul li {
@@ -63,12 +64,14 @@ ul li {
 }
 
 ul li:hover {
-  background: #8b5cf6; /* roxo neon */
+  background: #8b5cf6;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 600px;
 }
 
 form input,
@@ -137,13 +140,36 @@ footer {
   z-index: -1;
 }
 
+/* Centralização geral */
 main, header, section, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 15px;
 }
 
+/* Limite de largura para textos */
 section p, section ul {
   max-width: 800px;
+}
+
+/* RESPONSIVIDADE para celulares */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+  }
+
+  form {
+    max-width: 100%;
+  }
 }
