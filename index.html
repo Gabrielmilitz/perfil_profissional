@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gabriel Marin Militz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
-  
+
   <!-- Vídeo de fundo -->
   <video autoplay muted loop id="video-fundo">
-    <source src="fundo.mp4" type="video/mp4">
+    <source src="fundo.mp4" type="video/mp4" />
     Seu navegador não suporta vídeo HTML5.
   </video>
 
-  <header>
-    <h1>Gabriel Marin Militz</h1>
-    <p>Desenvolvedor ❌ Resolvedor de problemas 🟢 | Programação 🐍☕ | Automação dos canais de comunicação e Inteligência Artificial 👩</p>
-    <img src="perfil.png" alt="Foto de Gabriel Marin Militz" class="foto-perfil">
-  </header>
+  <div class="container-principal">
 
-  <section id="sobre">
-    <h2>Sobre Mim</h2>
-    <p>Meu nome é Gabriel Militz, gosto de correr, ouvir música, jogar Minecraft e League of Legends.<br>
-    Quando não estou fazendo isso, gosto de resolver os seus problemas — principalmente aqueles que envolvem tecnologia. 🌀🧠🔁🛠️<br>
-    Seja automatizando sistemas, criando soluções inteligentes ou conectando ferramentas,<br>
-    meu objetivo é facilitar sua vida com código. Porque enquanto uns só farmam XP no jogo,<br>
-    eu farmo soluções na vida real.. 🚀</p>
-  </section>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="header-centralizado">
+        <img src="perfil.png" alt="Foto de Gabriel Marin Militz" class="foto-perfil" />
+        <h1>Gabriel Marin Militz</h1>
+        <p>
+          Desenvolvedor ❌ Resolvedor de problemas 🟢 | Programação 🐍☕ | 
+          Automação dos canais de comunicação e Inteligência Artificial 👩
+        </p>
+      </div>
+    </header>
 
-  <section id="habilidades">
-    <h2>Aqui o que vou fazer por você 🚀</h2>
-    <ul>
-      <li>Python, Django, Mysql, Pyside, Pandas</li>
-      <li>Implementação de Bots em canais de atendimento e redes sociais</li>
-      <li>Java e modulação</li>
-      <li>Otimização de resultados através da Programação</li>
-      <li>Implementação de Inteligência Artificial</li>
-    </ul>
-  </section>
+    <!-- Sobre -->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>
+        Meu nome é Gabriel Militz, gosto de correr, ouvir música, jogar Minecraft e League of Legends.<br>
+        Quando não estou fazendo isso, gosto de resolver os seus problemas — principalmente aqueles que envolvem tecnologia. 🌀🧠🔁🛠️<br>
+        Seja automatizando sistemas, criando soluções inteligentes ou conectando ferramentas,<br>
+        meu objetivo é facilitar sua vida com código. Porque enquanto uns só farmam XP no jogo,<br>
+        eu farmo soluções na vida real.. 🚀
+      </p>
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <form id="form-contato">
-      <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-      <input type="email" id="email" name="email" placeholder="Seu Email" required>
-      <input type="text" id="title" name="title" placeholder="Título da Mensagem" required>
-      <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
-      <button type="submit">Enviar Mensagem</button>
-    </form>
-    <p id="mensagem-sucesso"></p>
-  </section>
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <h2>Aqui o que vou fazer por você 🚀</h2>
+      <ul>
+        <li>Python, Django, Mysql, Pyside, Pandas</li>
+        <li>Implementação de Bots em canais de atendimento e redes sociais</li>
+        <li>Java e modulação</li>
+        <li>Otimização de resultados através da Programação</li>
+        <li>Implementação de Inteligência Artificial</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>Entre em contato - codename: Angelusdev.</p>
-  </footer>
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <form id="form-contato">
+        <input type="text" id="name" name="name" placeholder="Seu Nome" required />
+        <input type="email" id="email" name="email" placeholder="Seu Email" required />
+        <input type="text" id="title" name="title" placeholder="Título da Mensagem" required />
+        <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+      <p id="mensagem-sucesso"></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Entre em contato - codename: Angelusdev.</p>
+      <p>
+        📱 <a href="https://wa.me/5581999998888" target="_blank" style="color: #4ade80; font-weight: bold;">
+          Fale comigo no WhatsApp
+        </a>
+      </p>
+    </footer>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
