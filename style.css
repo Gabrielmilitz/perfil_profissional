@@ -14,7 +14,6 @@ body {
   line-height: 1.6;
   background: none;
   color: #e0e0e0;
-  padding: 0 20px;
   position: relative;
   z-index: 1;
 }
@@ -109,6 +108,13 @@ form textarea::placeholder {
   color: #aaa;
 }
 
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #6366f1;
+  border-color: #8b5cf6;
+}
+
 form button {
   background: #6366f1;
   color: #ffffff;
@@ -125,10 +131,15 @@ form button:hover {
   background: #8b5cf6;
 }
 
+form button:active {
+  transform: scale(0.98);
+}
+
 #mensagem-sucesso {
   margin-top: 20px;
   color: #6366f1;
   font-weight: bold;
+  text-align: center;
 }
 
 /* Rodapé */
@@ -162,10 +173,26 @@ footer {
   z-index: -1;
 }
 
+/* Camada escura sobre o vídeo para contraste */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
 /* Responsivo */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
   }
 
   section h2 {
@@ -177,7 +204,7 @@ footer {
     height: 110px;
   }
 
-  form {
-    padding: 0 10px;
+  main, header, section, footer {
+    padding: 20px;
   }
 }
